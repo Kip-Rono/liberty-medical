@@ -1,0 +1,24 @@
+div#callouts2 ul li {
+    display: inline-block;
+    width: calc(100% / 5 - 5px);
+    margin: 0;
+    padding: 0 10px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+div#callouts2 ul li a {
+    font-family: 'Droid Serif';
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    color: #2f57d9;
+    text-align: center;
+    display: block;
+    transition: all .5s;
+}
+
+div#callouts2 ul li a span {
+    display: block;
+    margin-bottom: 10px;
+}
