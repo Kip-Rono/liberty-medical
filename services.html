@@ -19,6 +19,8 @@
             src='public/assets/client/dist/js/sharethis.min1a84.js?rev=a22b6b5ca916b9c0a51dea5c635d7035' async='async'
             defer>
     </script>
+    <!--lazy loading  js-->
+    <script src="public/assets/js/lazysizes.min.js" async=""></script>
 </head>
 <body>
 <div id="page-content">
@@ -29,7 +31,7 @@
                 <div class="col-6 aaos--row">
                     <div class="navbutton-placeholder"></div>
                     <a class="logo aaos-logo" href="index.html">
-                        <img src="public/assets/img/index/icon.png"/>
+                        <img data-src="public/assets/img/index/icon.png" class="lazyload"/>
                     </a>
                 </div>
                 <div class="col-6">
@@ -137,11 +139,11 @@
                     </div>
                     <div id="callouts2" class="screenonly">
                         <ul style="list-style: none; vertical-align: baseline;display: block">
-                            <li><a><span>Shoulder</span><img src="public/assets/img/services/shoulder.png" alt="shoulder graphic"></a></li>
-                            <li><a><span>Elbow</span><img src="public/assets/img/services/elbow.png" alt="Elbow graphic"></a></li>
-                            <li><a><span>Hip</span><img src="public/assets/img/services/hip.png" alt="Hip graphic"></a></li>
-                            <li><a><span>Knee</span><img src="public/assets/img/services/knee.png" alt="Knee graphic"></a></li>
-                            <li><a><span>Wrist</span><img src="public/assets/img/services/wrist.png" alt="Wrist graphic"></a></li>
+                            <li><a><span>Shoulder</span><img data-src="public/assets/img/services/shoulder.png" class="lazyload" alt="shoulder graphic"></a></li>
+                            <li><a><span>Elbow</span><img data-src="public/assets/img/services/elbow.png" class="lazyload" alt="Elbow graphic"></a></li>
+                            <li><a><span>Hip</span><img data-src="public/assets/img/services/hip.png" class="lazyload" alt="Hip graphic"></a></li>
+                            <li><a><span>Knee</span><img data-src="public/assets/img/services/knee.png" class="lazyload" alt="Knee graphic"></a></li>
+                            <li><a><span>Wrist</span><img data-src="public/assets/img/services/wrist.png" class="lazyload" alt="Wrist graphic"></a></li>
                         </ul>
                         <div class="clearfix"></div>
                         <div class="col-50 center">
@@ -171,19 +173,19 @@
             <ul class="footer--panel">
                 <li>
                     <a class="logo logo--footer" target="" href="#">
-                        <img class="img-responsive" src="public/assets/img/index/icon.png"/>
+                        <img class="lazyload img-responsive" data-src="public/assets/img/index/icon.png"/>
                     </a>
                     <address>
-                        <p>9400 Westland</p>
+                        <p>Kimathi Street</p>
                         <p>Nairobi, Kenya</p>
-                        <p>Phone: +254 722 426 132</p>
+                        <p>Phone: +254 770 220 265</p>
                     </address>
                 </li>
 
                 <li class="footer--links-first">
                     <ul class="footer--links">
-                        <li><a target="_top" href="about.html">About Liberty Medical Supplies</a></li>
-                        <li><a target="_blank" href="contact.html">Online Quotes</a></li>
+                        <li><a target="_top" href="about.html">About Liberty</a></li>
+                        <!--<li><a target="_blank" href="contact.html">Online Quotes</a></li>-->
                     </ul>
                 </li>
                 <li class="footer--links-second">
@@ -196,15 +198,15 @@
                     <p class="footer--social-links"></p>
                     <ul class="btn-container">
                         <li><a class="btn btn--round btn--white btn--facebook" target="_blank"
-                               href=""></a></li>
+                               href="https://www.facebook.com/"></a></li>
                         <li><a class="btn btn--round btn--white btn--twitter" target="_blank"
-                               href=""></a></li>
+                               href="https://twitter.com/"></a></li>
                         <li><a class="btn btn--round btn--white btn--youtube" target="_blank"
-                               href=""></a></li>
+                               href="https://www.youtube.com/"></a></li>
                         <li><a class="btn btn--round btn--white btn--linkedin" target="_blank"
-                               href=""></a></li>
-                        <li><a class="btn btn--round btn--white btn--instagram"
-                               href=""></a></li>
+                               href="https://www.linkedin.com/"></a></li>
+                        <li><a class="btn btn--round btn--white btn--instagram" target="_blank"
+                               href="https://www.instagram.com/"></a></li>
                     </ul>
                 </li>
 
@@ -212,11 +214,10 @@
 
             <div class="row">
                 <p class="copyrights">
-                    © 2017-2022 by the Corporate Registration Office - Kenya. "All Rights Reserved." This website and
-                    its contents may not be reproduced in whole or in part without written permission.
+                    © 2022 Liberty Medical Supplies Limited.
                 </p>
             </div>
-            <div class="align-right version-number">Version: 2.0.2.19361</div>
+
         </div>
     </footer>
 </div>

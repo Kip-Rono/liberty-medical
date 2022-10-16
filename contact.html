@@ -19,6 +19,8 @@
             src='public/assets/client/dist/js/sharethis.min1a84.js?rev=a22b6b5ca916b9c0a51dea5c635d7035' async='async'
             defer>
     </script>
+    <!--lazy loading  js-->
+    <script src="public/assets/js/lazysizes.min.js" async=""></script>
 </head>
 <body>
 <div id="page-content">
@@ -29,7 +31,7 @@
                 <div class="col-6 aaos--row">
                     <div class="navbutton-placeholder"></div>
                     <a class="logo aaos-logo" href="index.html">
-                        <img src="public/assets/img/index/icon.png"/>
+                        <img data-src="public/assets/img/index/icon.png" class="lazyload"/>
                     </a>
                 </div>
                 <div class="col-6">
@@ -127,95 +129,86 @@
                             <div class="two-third">
                                 <div class="box--row py-0">
                                     <div class="details--title-row title-printing-sharing">
-                                        <h1>Contact the Liberty Medical Team</h1>
+                                        <h1>Contact the Liberty Medical Supplies Team</h1>
                                     </div>
                                 </div>
                                 <div class="txt">
-                                    <p>If you need assistance with a Liberty Medical product or service, we're here to help. We
+                                    <p>If you need assistance with a Liberty Medical product or service, we're here to
+                                        help. We
                                         offer several options for support, including:</p>
                                     <ul>
                                         <li>
                                             <strong>
-                                                <a title="Liberty Frequently Asked Questions" href="">Find quick answers</a>
-                                            </strong>to the most frequently asked questions about our equipment, and more.
+                                                <a title="Liberty Frequently Asked Questions" href="#">Find quick
+                                                    answers</a>
+                                            </strong>to the most frequently asked questions.
                                         </li>
                                         <li>Submit a simple&nbsp;
                                             <strong>
                                                 <a title="Email Support Form" href="#contactForm">Contact Us Form</a>
-                                            </strong>&nbsp;to provide us with the information we need to
-                                            answer your inquiry as quickly as possible&nbsp;
+                                            </strong>&nbsp;to provide us with the information you need.&nbsp;
                                         </li>
                                         <li>If you need additional help, contact our
                                             <strong>
-                                                <a title="Customer &amp; Services Team" href=""
+                                                <a title="Customer &amp; Services Team" href="#"
                                                    target="_top" data-original-href="/CustomerServiceTeam">
                                                     Customer Service Team
                                                 </a>
                                             </strong></li>
                                     </ul>
-                                    <p>
-                                        <em>
-                                            <strong>Please note the Store does not respond to requests for medical advice,
-                                                physician referrals, reference materials, or sources of materials.
-                                            </strong>
-                                        </em>
-                                    </p>
                                 </div>
                                 <div class="box--row">
                                     <div class="txt">
-                                        <h3>Liberty Medical Limited Headquarters Office</h3>
+                                        <h3>Headquarters Office</h3>
                                         <p>
-                                            9400 Westlands<br>
+                                            Kimathi Street <br>
                                             Nairobi, Kenya<br>
                                             Phone: +254 722 426 132<br>
                                             Business hours: Monday - Friday, 8 a.m. to 6 p.m. EAT
                                         </p>
-                                        <p>
-                                            <a title="Directions to AAOS Headquarters" href="" target="_top">
-                                                <strong>Directions and transportation information</strong>
-                                            </a>
-                                        </p>
                                     </div>
 
-                                    <div class="txt">
-                                        <h3>Nakuru Office</h3>
-                                        <p>
-                                            317 Nakuru Hazina Hse, 1st Floor<br>
-                                            Nakuru, Kenya<br>
-                                            Phone: 202-546-4430<br>
-                                            Business hours: Monday - Friday, 8 a.m. to 6 p.m. EAT
-                                        </p>
-                                    </div>
+                                    <!--                                    <div class="txt">-->
+                                    <!--                                        <h3>Nakuru Office</h3>-->
+                                    <!--                                        <p>-->
+                                    <!--                                            317 Nakuru Hazina Hse, 1st Floor<br>-->
+                                    <!--                                            Nakuru, Kenya<br>-->
+                                    <!--                                            Phone: 202-546-4430<br>-->
+                                    <!--                                            Business hours: Monday - Friday, 8 a.m. to 6 p.m. EAT-->
+                                    <!--                                        </p>-->
+                                    <!--                                    </div>-->
 
                                 </div>
                                 <div class="box--row">
-                                        <div class="col-lg-12">
-                                            <form class="contact_us_form row" action="" method="post" id="contactForm" novalidate="">
-                                                <div class="form-group col-lg-6 mb-2">
-                                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-                                                </div>
-                                                <div class="form-group col-lg-6 mb-2">
-                                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-                                                </div>
-                                                <div class="form-group col-lg-12 mb-2">
-                                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject*">
-                                                </div>
-                                                <div class="form-group col-lg-12 mb-2">
-                                                    <textarea class="form-control" name="message" id="message" rows="1" placeholder="Message"></textarea>
-                                                </div>
-                                                <div class="form-group col-lg-12 mb-2">
-                                                    <button type="submit" value="submit" class="btn btn-outline-dark submit_btn">Send</button>
-                                                </div>
-                                            </form>
-                                        </div>
+                                    <div class="col-lg-12">
+                                        <form class="contact_us_form row" action="" method="post" id="contactForm"
+                                              novalidate="">
+                                            <div class="form-group col-lg-6 mb-2">
+                                                <input type="text" class="form-control" id="name" name="name"
+                                                       placeholder="Name">
+                                            </div>
+                                            <div class="form-group col-lg-6 mb-2">
+                                                <input type="email" class="form-control" id="email" name="email"
+                                                       placeholder="Email">
+                                            </div>
+                                            <div class="form-group col-lg-12 mb-2">
+                                                <input type="text" class="form-control" id="subject" name="subject"
+                                                       placeholder="Subject*">
+                                            </div>
+                                            <div class="form-group col-lg-12 mb-2">
+                                                <textarea class="form-control" name="message" id="message" rows="1"
+                                                          placeholder="Message"></textarea>
+                                            </div>
+                                            <div class="form-group col-lg-12 mb-2">
+                                                <button type="submit" value="submit"
+                                                        class="btn btn-outline-dark submit_btn">Send
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
 
-                            </div>
-                            <div class="one-third">
-
-                                <div class="ad ad--single">
-                                    <div id="div-gpt-ad-1452208765353-1"></div>
                                 </div>
-
+                                <!-- ======= Map Section ======= -->
                             </div>
                         </div>
                     </div>
@@ -223,25 +216,39 @@
             </div>
         </section>
     </main>
+
+    <!-- Map   -->
+    <div class="col-lg-12">
+
+            <div class="container-fluid p-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.816912112439!2d36.82055691433531!3d-1.2837360359844632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d5d63997f1%3A0xfb825e08591621ab!2sKimathi%20St%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1665930304014!5m2!1sen!2ske"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+
+                </iframe>
+            </div>
+            <!-- End Map Section -->
+        </div>
+
     <!--    FOOTER    -->
     <footer>
         <div class="container">
             <ul class="footer--panel">
                 <li>
                     <a class="logo logo--footer" target="" href="#">
-                        <img class="img-responsive" src="public/assets/img/index/icon.png"/>
+                        <img class="lazyload img-responsive" data-src="public/assets/img/index/icon.png"/>
                     </a>
                     <address>
-                        <p>9400 Westland</p>
+                        <p>Kimathi Street</p>
                         <p>Nairobi, Kenya</p>
-                        <p>Phone: +254 722 426 132</p>
+                        <p>Phone: +254 770 220 265</p>
                     </address>
                 </li>
 
                 <li class="footer--links-first">
                     <ul class="footer--links">
-                        <li><a target="_top" href="about.html">About Liberty Medical Supplies</a></li>
-                        <li><a target="_blank" href="contact.html">Online Quotes</a></li>
+                        <li><a target="_top" href="about.html">About Liberty</a></li>
+                        <!--<li><a target="_blank" href="contact.html">Online Quotes</a></li>-->
                     </ul>
                 </li>
                 <li class="footer--links-second">
@@ -254,15 +261,15 @@
                     <p class="footer--social-links"></p>
                     <ul class="btn-container">
                         <li><a class="btn btn--round btn--white btn--facebook" target="_blank"
-                               href=""></a></li>
+                               href="https://www.facebook.com/"></a></li>
                         <li><a class="btn btn--round btn--white btn--twitter" target="_blank"
-                               href=""></a></li>
+                               href="https://twitter.com/"></a></li>
                         <li><a class="btn btn--round btn--white btn--youtube" target="_blank"
-                               href=""></a></li>
+                               href="https://www.youtube.com/"></a></li>
                         <li><a class="btn btn--round btn--white btn--linkedin" target="_blank"
-                               href=""></a></li>
-                        <li><a class="btn btn--round btn--white btn--instagram"
-                               href=""></a></li>
+                               href="https://www.linkedin.com/"></a></li>
+                        <li><a class="btn btn--round btn--white btn--instagram" target="_blank"
+                               href="https://www.instagram.com/"></a></li>
                     </ul>
                 </li>
 
@@ -270,11 +277,10 @@
 
             <div class="row">
                 <p class="copyrights">
-                    © 2017-2022 by the Corporate Registration Office - Kenya. "All Rights Reserved." This website and
-                    its contents may not be reproduced in whole or in part without written permission.
+                    © 2022 Liberty Medical Supplies Limited.
                 </p>
             </div>
-            <div class="align-right version-number">Version: 2.0.2.19361</div>
+
         </div>
     </footer>
 </div>

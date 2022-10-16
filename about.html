@@ -19,6 +19,8 @@
             src='public/assets/client/dist/js/sharethis.min1a84.js?rev=a22b6b5ca916b9c0a51dea5c635d7035' async='async'
             defer>
     </script>
+    <!--lazy loading  js-->
+    <script src="public/assets/js/lazysizes.min.js" async=""></script>
 </head>
 <body>
 <div id="page-content">
@@ -29,7 +31,7 @@
                 <div class="col-6 aaos--row">
                     <div class="navbutton-placeholder"></div>
                     <a class="logo aaos-logo" href="index.html">
-                        <img src="public/assets/img/index/icon.png"/>
+                        <img data-src="public/assets/img/index/icon.png" class="lazyload"/>
                     </a>
                 </div>
                 <div class="col-6">
@@ -131,26 +133,21 @@
 
                                 <div class="box--row py-0">
                                     <div class="details--title-row title-printing-sharing">
-                                        <h1>Liberty Medical Strategic Plan: 2018-2023</h1>
+                                        <h1>About Liberty Medical Supplies Limited</h1>
                                     </div>
                                 </div>
                                 <div class="box--row py-0">
-                                    <p>Thank you for choosing Liberty Medical Limited - Kenya.
+                                    <p>Thank you for choosing Liberty Medical Supplies Limited - Kenya.
                                         Our practice is committed to providing you with a superior level of service in a friendly
-                                        and personalized environment. Our practice is dedicated to providing Orthopaedic and
-                                        Orthopaedic Surgery health care equipment for our clients, with pleasant surroundings and
-                                        state-of-the-art equipment.
-                                        <br>
-                                        We are very proud of the relationships that we have established with our clients.
-                                        The management and staff at Liberty Medical - Kenya are focused on maintaining your trust and confidence.
-                                        We are especially honored that our clients have referred so many of their friends and organizations to our enterprise.
-                                        We look forward to making lasting relationships with every client we meet.
+                                        and personalized environment.
+                                        We are very proud of the relationships that we have established with our clients and we are focused
+                                        on maintaining their trust and confidence.
                                     </p>
                                 </div>
                                 <div class="box--row">
                                     <div class="">
                                         <div class="card-img">
-                                            <img src="public/assets/img/about/dna.png">
+                                            <img data-src="public/assets/img/about/dna.png" class="lazyload">
                                         </div>
                                     </div>
 
@@ -160,6 +157,12 @@
                                             care equipment.</p>
                                         <h2>The Vision</h2>
                                         <p>The trusted leaders in advancing musculoskeletal health equipment.</p>
+                                        <h2>Core Values</h2>
+                                        <ul>
+                                            <li>Leading to serve</li>
+                                            <li>Shaping the future</li>
+                                            <li>Excellence together</li>
+                                        </ul>
                                     </div>
 
                                 </div>
@@ -173,12 +176,7 @@
                                             volunteer structure to become more <strong>strategic, innovative,</strong>
                                             and <strong>diverse</strong></li>
                                     </ul>
-                                    <h2>Core Values</h2>
-                                    <ul>
-                                        <li>Leading to serve</li>
-                                        <li>Shaping the future</li>
-                                        <li>Excellence together</li>
-                                    </ul>
+
                                     <h2>Key Enablers</h2>
                                     <ul>
                                         <li><strong>Advocacy: </strong>Advocate to advance access to and quality of
@@ -195,8 +193,7 @@
                                             platforms to offer seamless experiences.&nbsp;
                                         </li>
                                     </ul>
-                                    <p><strong><em>Approved - Liberty Medical Board of Directors - December 6, 2018.</em></strong>
-                                    </p>
+
                                     <p>&nbsp;</p>
                                 </div>
                             </div>
@@ -212,19 +209,19 @@
             <ul class="footer--panel">
                 <li>
                     <a class="logo logo--footer" target="" href="#">
-                        <img class="img-responsive" src="public/assets/img/index/icon.png"/>
+                        <img class="lazyload img-responsive" data-src="public/assets/img/index/icon.png"/>
                     </a>
                     <address>
-                        <p>9400 Westland</p>
+                        <p>Kimathi Street</p>
                         <p>Nairobi, Kenya</p>
-                        <p>Phone: +254 722 426 132</p>
+                        <p>Phone: +254 770 220 265</p>
                     </address>
                 </li>
 
                 <li class="footer--links-first">
                     <ul class="footer--links">
-                        <li><a target="_top" href="about.html">About Liberty Medical Supplies</a></li>
-                        <li><a target="_blank" href="contact.html">Online Quotes</a></li>
+                        <li><a target="_top" href="about.html">About Liberty</a></li>
+                        <!--<li><a target="_blank" href="contact.html">Online Quotes</a></li>-->
                     </ul>
                 </li>
                 <li class="footer--links-second">
@@ -237,15 +234,15 @@
                     <p class="footer--social-links"></p>
                     <ul class="btn-container">
                         <li><a class="btn btn--round btn--white btn--facebook" target="_blank"
-                               href=""></a></li>
+                               href="https://www.facebook.com/"></a></li>
                         <li><a class="btn btn--round btn--white btn--twitter" target="_blank"
-                               href=""></a></li>
+                               href="https://twitter.com/"></a></li>
                         <li><a class="btn btn--round btn--white btn--youtube" target="_blank"
-                               href=""></a></li>
+                               href="https://www.youtube.com/"></a></li>
                         <li><a class="btn btn--round btn--white btn--linkedin" target="_blank"
-                               href=""></a></li>
-                        <li><a class="btn btn--round btn--white btn--instagram"
-                               href=""></a></li>
+                               href="https://www.linkedin.com/"></a></li>
+                        <li><a class="btn btn--round btn--white btn--instagram" target="_blank"
+                               href="https://www.instagram.com/"></a></li>
                     </ul>
                 </li>
 
@@ -253,11 +250,10 @@
 
             <div class="row">
                 <p class="copyrights">
-                    © 2017-2022 by the Corporate Registration Office - Kenya. "All Rights Reserved." This website and
-                    its contents may not be reproduced in whole or in part without written permission.
+                    © 2022 Liberty Medical Supplies Limited.
                 </p>
             </div>
-            <div class="align-right version-number">Version: 2.0.2.19361</div>
+
         </div>
     </footer>
 
